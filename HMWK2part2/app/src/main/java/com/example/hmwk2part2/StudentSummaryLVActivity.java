@@ -1,6 +1,7 @@
 package com.example.hmwk2part2;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -25,12 +26,13 @@ public class StudentSummaryLVActivity extends AppCompatActivity {
 
     protected Menu detailMenu;
 
+    public static Context contextVar;
 
     @Override
     protected void onCreate(Bundle savedInstance){
         Log.d(TAG, "onCreate() called");
         super.onCreate(savedInstance);
-
+        contextVar = this;
         setContentView(R.layout.student_summary_listview);
 
         studentSummaryView = findViewById(R.id.student_summary_listView_ID);
