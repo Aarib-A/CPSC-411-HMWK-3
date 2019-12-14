@@ -22,8 +22,7 @@ public class DatabaseClass{
     private String fileDBname = "hmwk3.db";
     private File dbFilePath;
     private SQLiteDatabase myDB;
-//    private SQLiteDatabase myDB;
-//    private Context myContext;
+
     private static final DatabaseClass ourInstance = new DatabaseClass();
 
     public static DatabaseClass getInstance(){return ourInstance;}
